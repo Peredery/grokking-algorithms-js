@@ -1,0 +1,19 @@
+{
+  "name": "grokking-algorithms-js",
+  "devDependencies": {
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --watchAll"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {}
+  }
+}
