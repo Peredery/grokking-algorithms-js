@@ -1,4 +1,4 @@
-import binarySearch from "../01/binarySearch";
+import binarySearch from '../01/binarySearch';
 
 test('Binary Search', () => {
   const list1 = [0, 1, 2, 3, 4, 5, 6, 7];
