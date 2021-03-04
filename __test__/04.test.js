@@ -1,4 +1,6 @@
-import { sum, sumOfEl, max, recursiveBinarySearch } from '../04/04';
+import {
+  sum, sumOfEl, max, recursiveBinarySearch, euclideanAlgorithm
+} from '../04/04';
 
 test('sum', () => {
   const arr = [1, 2, 3, 4];
@@ -27,4 +29,8 @@ test('Recursive binary search', () => {
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   expect(recursiveBinarySearch(arr, 8)).toBe(8);
   expect(recursiveBinarySearch(arr, 12)).toBe(null);
+});
+
+test('euclideanAlgorithm', () => {
+  expect(euclideanAlgorithm(1680, 640)).toBe(80);
 });

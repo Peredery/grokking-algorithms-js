@@ -1,3 +1,8 @@
+const euclideanAlgorithm = (a, b) => {
+  if (a === 0 || b === 0) return a + b;
+  return a > b ? euclideanAlgorithm(a % b, b) : euclideanAlgorithm(a, b % a);
+};
+
 const recursiveBinarySearch = (list, item) => {
   const low = 0;
   const high = list.length - 1;
@@ -30,4 +35,5 @@ export {
   sumOfEl,
   max,
   recursiveBinarySearch,
+  euclideanAlgorithm,
 };
