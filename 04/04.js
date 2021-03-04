@@ -1,3 +1,11 @@
+const quickSort = (arr) => {
+  if (arr.length < 2) return arr;
+  const pivot = arr[0];
+  const lessThanPivot = arr.filter((el) => el < pivot);
+  const greaterThanPivot = arr.filter((el) => el > pivot);
+  return [...quickSort(lessThanPivot), pivot, ...quickSort(greaterThanPivot)];
+};
+
 const euclideanAlgorithm = (a, b) => {
   if (a === 0 || b === 0) return a + b;
   return a > b ? euclideanAlgorithm(a % b, b) : euclideanAlgorithm(a, b % a);
@@ -36,4 +44,5 @@ export {
   max,
   recursiveBinarySearch,
   euclideanAlgorithm,
+  quickSort,
 };

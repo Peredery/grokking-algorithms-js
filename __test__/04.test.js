@@ -1,5 +1,5 @@
 import {
-  sum, sumOfEl, max, recursiveBinarySearch, euclideanAlgorithm
+  sum, sumOfEl, max, recursiveBinarySearch, euclideanAlgorithm, quickSort,
 } from '../04/04';
 
 test('sum', () => {
@@ -34,3 +34,9 @@ test('Recursive binary search', () => {
 test('euclideanAlgorithm', () => {
   expect(euclideanAlgorithm(1680, 640)).toBe(80);
 });
+
+test('quickSort', () => {
+  const arr = [1, 4, 6, 9, 2, 5, 8];
+  const result = [1, 2, 4, 5, 6, 8, 9];
+  expect(quickSort(arr)).toEqual(result);
+})
